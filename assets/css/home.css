@@ -1,0 +1,298 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #326CF9;
+  --title-color: #FFFFFF;
+  --text-color: #707070;
+  --body-color: #000000;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+
+  /*========== Font weight ==========*/
+  --font--regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-weight: var(--font--regular);
+}
+
+body {
+  background: var(--body-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  margin-bottom: 0;
+}
+
+.container{
+  --bs-gutter-x: 0;
+}
+
+a:hover{
+  color: var(--title-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button{
+  background-color: var(--first-color);
+  color: var(--title-color);
+  border-radius: 7px;
+  transition: background .4s;
+  margin-left: 2px;
+}
+
+.button:hover{
+  background-color: transparent;
+  box-shadow: var(--first-color) 0px 1px 4px, var(--first-color) 0px 0px 0px 3px;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-weight: 800;
+  color: var(--title-color);
+  font-size: 37px;
+  line-height: 56px;
+}
+
+.nav__logo-img {
+  width: 45px;
+}
+
+.nav__toggle {
+  display: inline-flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+  }
+}
+
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+  padding-top: 9rem;
+  align-items: center;
+  padding-left: 0;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: .4s;
+}
+
+.nav__link:hover {
+  color:  var(--first-color);
+}
+
+.nav__close {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.sign_login{
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-left: 200px;
+}
+
+.sign_login .nav__link:nth-last-child(1){
+  padding: 12px 20px;
+  color: var(--title-color);
+}
+
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
+}
+
+.scroll-header .nav__logo-img {
+  mix-blend-mode: difference;
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== LOGOS ===============*/
+
+
+/*=============== PROGRAM ===============*/
+
+
+/*=============== CHOOSE ===============*/
+
+
+/*=============== PRICING ===============*/
+
+
+/*=============== CALCULATE ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media (max-width: 575px) {
+  .container{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* For medium devices */
+@media (min-width: 992px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    padding-top: 0;
+    flex-direction: row;
+    column-gap: 38px;
+  }
+
+  .nav__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: initial;
+  }
+
+  .scroll-header .nav__link {
+    color: var(--text-color);
+  }
+
+  .scroll-header .active-link {
+    color: var(--title-color);
+  }
+
+  .scroll-header .active-link::after {
+    background-color: var(--title-color);
+  }
+}
+
+/* For large devices */
+@media (max-width: 1199px) {
+  .sign_login{
+    margin-left: 0;
+  }
+}
