@@ -41,6 +41,9 @@
 .signup__form .button {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--title-color);
 }
 
 .signup__input {
@@ -57,7 +60,7 @@
     color: var(--title-color);
 }
 
-.login__btn{
+.login__btn {
     transform: translateX(325px);
 }
 
@@ -139,14 +142,6 @@
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width:1399px) {
     .accounts__btn {
         width: 350px;
@@ -162,7 +157,7 @@
         width: 305px;
     }
 
-    .login__btn{
+    .login__btn {
         transform: translateX(275px);
     }
 }
@@ -186,7 +181,7 @@
         margin-bottom: 50px;
     }
 
-    .login__btn{
+    .login__btn {
         transform: translateX(190px);
     }
 }
@@ -201,9 +196,15 @@
         line-height: 34px;
         color: var(--title-color);
     }
-    .signup__subtitle{
+
+    .signup__form .button{
+        font-size: 20px;
+    }
+
+    .signup__subtitle {
         font-size: 50px;
     }
+
     .accounts__buttons {
         row-gap: 20px;
         grid-template-columns: repeat(1, max-content);
@@ -214,7 +215,7 @@
         width: 300px;
     }
 
-    .login__btn{
+    .login__btn {
         transform: translateX(150px);
     }
 }
@@ -237,8 +238,10 @@
 
     .signup__form .button {
         width: 50%;
+        font-size: 17px;
     }
-    .login__btn{
+
+    .login__btn {
         transform: none;
     }
 }
