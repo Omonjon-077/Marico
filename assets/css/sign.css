@@ -57,6 +57,10 @@
     color: var(--title-color);
 }
 
+.login__btn{
+    transform: translateX(325px);
+}
+
 .signup__wrap {
     border-bottom: 1px solid var(--text-color);
     width: 487px;
@@ -96,14 +100,14 @@
     margin-bottom: 42px;
 }
 
-.accounts__buttons{
+.accounts__buttons {
     display: grid;
     column-gap: 20px;
     grid-template-columns: repeat(3, max-content);
     margin-bottom: 69px;
 }
 
-.accounts__btn{
+.accounts__btn {
     border: 2px solid var(--title-color);
     padding-top: 19px;
     display: flex;
@@ -113,6 +117,20 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 19px;
+    font-size: 21px;
+    line-height: 32px;
+    color: var(--title-color);
+}
+
+.accounts__btn:hover {
+    color: var(--title-color);
+}
+
+.accounts__copy {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
 }
 
 
@@ -129,11 +147,23 @@
 
 
 
-
+@media (max-width:1399px) {
+    .accounts__btn {
+        width: 350px;
+    }
+}
 
 @media (max-width:1199px) {
     .signup__wrap {
         width: 408px;
+    }
+
+    .accounts__btn {
+        width: 305px;
+    }
+
+    .login__btn{
+        transform: translateX(275px);
     }
 }
 
@@ -149,6 +179,16 @@
     .signup__description {
         text-align: center;
     }
+
+    .accounts__buttons {
+        gap: 20px;
+        grid-template-columns: repeat(2, max-content);
+        margin-bottom: 50px;
+    }
+
+    .login__btn{
+        transform: translateX(190px);
+    }
 }
 
 @media (max-width: 767px) {
@@ -160,6 +200,22 @@
         font-size: 16px;
         line-height: 34px;
         color: var(--title-color);
+    }
+    .signup__subtitle{
+        font-size: 50px;
+    }
+    .accounts__buttons {
+        row-gap: 20px;
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .accounts__btn {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .login__btn{
+        transform: translateX(150px);
     }
 }
 
@@ -181,5 +237,18 @@
 
     .signup__form .button {
         width: 50%;
+    }
+    .login__btn{
+        transform: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .accounts__copy {
+        font-size: 12px;
+    }
+
+    .accounts__copy a {
+        font-size: 14px;
     }
 }
