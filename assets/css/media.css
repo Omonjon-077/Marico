@@ -142,7 +142,7 @@
         /* order: 1; */
     }
 
-    .spot__left-title{
+    .spot__left-title {
         margin-bottom: 30px;
     }
 
@@ -209,7 +209,7 @@
         font-size: 25px;
     }
 
-    .spot__left-description{
+    .spot__left-description {
         width: 100%;
         font-size: 17px;
     }
@@ -281,11 +281,11 @@
         padding: 15px 30px;
     }
 
-    .spot__left-description{
+    .spot__left-description {
         font-size: 16px;
     }
 
-    .spot__left-buttons{
+    .spot__left-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -295,20 +295,23 @@
 
     .spot__left-subtitle,
     .spot__left-text,
-    .spot__left-text span{
+    .spot__left-text span {
         font-size: 30px;
         line-height: 40px;
     }
 
-    .spot__left-title{
+    .spot__left-title {
         font-size: 25px;
     }
 
     .spot__left-buttons .button,
-    .spot__left-buttons .demo__btn{
+    .spot__left-buttons .demo__btn {
         font-size: 16px;
     }
 
+    .spot__right {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {
@@ -328,13 +331,13 @@
         margin-bottom: 50px;
     }
 
-    .step__container .demo__btn{
+    .step__container .demo__btn {
         width: 100%;
         text-align: center;
     }
 
     .spot__left-buttons .button,
-    .spot__left-buttons .demo__btn{
+    .spot__left-buttons .demo__btn {
         width: 100%;
         text-align: center;
     }
