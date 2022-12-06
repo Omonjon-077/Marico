@@ -34,12 +34,6 @@
   margin: 0;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
 h1,
 h2,
 h3,
@@ -48,8 +42,6 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 p {
@@ -113,6 +105,7 @@ img {
 
 .button:hover {
   background-color: transparent;
+  color: var(--title-color);
   box-shadow: var(--first-color) 0px 1px 4px, var(--first-color) 0px 0px 0px 3px;
 }
 
@@ -264,9 +257,6 @@ img {
 
 /*=============== INTRO ===============*/
 .intro__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 178px;
 }
 
@@ -290,27 +280,16 @@ img {
   margin-bottom: 136px;
 }
 
-.intro__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .intro__wrap-subtitle {
   font-weight: 500;
   font-size: 40px;
   line-height: 60px;
   color: var(--title-color);
   max-width: 694px;
-  width: 100%;
-  text-align: center;
   margin-bottom: 50px;
 }
 
 .intro__wrap-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 26px;
   margin-bottom: 22px;
 }
@@ -323,8 +302,6 @@ img {
 }
 
 .intro__description {
-  display: flex;
-  align-items: center;
   column-gap: 9px;
   font-size: 25px;
   line-height: 38px;
@@ -340,10 +317,6 @@ img {
 
 /*=============== CREATORS ===============*/
 .creators__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin-top: 188px;
   margin-bottom: 162px;
 }
@@ -354,27 +327,18 @@ img {
   line-height: 112px;
   color: var(--title-color);
   margin-bottom: 69px;
-  text-align: center;
 }
 
 .creators__wrap {
-  display: grid;
   grid-template-columns: repeat(3, max-content);
   column-gap: 60px;
 }
 
 .creators__wrap-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   row-gap: 10px;
 }
 
 .creators__wrap-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 8px;
   font-weight: 600;
   font-size: 35px;
@@ -385,17 +349,12 @@ img {
 .creators__wrap-description {
   font-size: 22px;
   line-height: 33px;
-  text-align: center;
   width: max-content;
   color: var(--text-color);
 }
 
 /*=============== STEP ===============*/
 .step__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   padding-bottom: 180px;
 }
 
@@ -411,7 +370,6 @@ img {
   font-size: 75px;
   line-height: 112px;
   color: var(--title-color);
-  text-align: center;
 }
 
 .step__description {
@@ -419,8 +377,6 @@ img {
   line-height: 45px;
   color: var(--text-color);
   max-width: 929px;
-  width: 100%;
-  text-align: center;
   margin-bottom: 34.5px;
 }
 
@@ -502,17 +458,119 @@ img {
   color: var(--title-color);
 }
 
-.spot__right {
-  display: flex;
-  align-items: center;
+/*=============== STEP TWO ===============*/
+.step__two-container {
+  padding-bottom: 180px;
 }
 
-.spot__right img {
-  width: 100%;
-  height: 100%;
+.step__two-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: var(--first-color);
 }
 
-/*=============== PRICING ===============*/
+.step__two-subtitle {
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 112px;
+  color: var(--title-color);
+}
+
+.step__two-data {
+  margin-bottom: 175px;
+  margin-top: 71px;
+}
+
+.step__two-description {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--text-color);
+  text-align: center;
+  max-width: 886px;
+}
+
+.step__two-wrap {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.step__two-box {
+  padding-top: 35px;
+  padding-left: 45px;
+  background: #0D0D0D;
+}
+
+.step__two-link {
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 24px;
+  color: #0FC65C;
+}
+
+.step__two-box:nth-last-child(1) .step__two-link {
+  margin-bottom: 96px;
+}
+
+.step__two-link:hover {
+  color: #0FC65C;
+}
+
+.step__two-text {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120px;
+  color: var(--text-color);
+}
+
+.step__two-txt {
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120px;
+}
+
+.step__two-img {
+  margin-top: 14px;
+  width: 788px;
+}
+
+.step__two-img img {
+  transform: translateX(120px);
+}
+
+.step__two-box:nth-last-child(1) {
+  z-index: 1;
+}
+
+.step__two-box:nth-last-child(1) .step__two-text {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 93px;
+  color: var(--text-color);
+}
+
+.step__two-box:nth-last-child(1) .step__two-txt {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 93px;
+  color: var(--title-color);
+}
+
+.step__two-button {
+  margin-top: 49px;
+}
+
+.step__two-button .button {
+  padding: 22px 81px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--title-color);
+}
+
+
 
 /*=============== CALCULATE ===============*/
 

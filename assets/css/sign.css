@@ -6,16 +6,8 @@
 
 .signup {
     max-width: 1120px;
-    width: 100%;
     margin: 0 auto;
     row-gap: 77px;
-}
-
-.signup__data {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .signup__subtitle {
@@ -33,7 +25,6 @@
 }
 
 .signup__form {
-    display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 84px 144px;
 }
@@ -49,7 +40,6 @@
 .signup__input {
     background-color: transparent;
     color: var(--title-color);
-    width: 100%;
     padding-left: 5px;
     padding-right: 20px;
 }
@@ -68,27 +58,11 @@
     border-bottom: 1px solid var(--text-color);
     width: 487px;
     padding-bottom: 15px;
-    display: flex;
-    align-items: center;
     padding-right: 15px;
 }
 
 
 /* Section Accounts */
-.accounts__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.accounts__data {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .accounts__subtitle {
     font-weight: 600;
     font-size: 54px;
@@ -104,7 +78,6 @@
 }
 
 .accounts__buttons {
-    display: grid;
     column-gap: 20px;
     grid-template-columns: repeat(3, max-content);
     margin-bottom: 69px;

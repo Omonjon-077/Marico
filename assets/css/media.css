@@ -22,6 +22,22 @@
     .creators__wrap-description {
         width: 100%;
     }
+
+    .step__two-box {
+        padding-top: 35px;
+        padding-left: 30px;
+        background: #0D0D0D;
+    }
+
+    .step__two-box:nth-last-child(1) .step__two-txt,
+    .step__two-box:nth-last-child(1) .step__two-text {
+        font-size: 50px;
+    }
+
+    .step__two-subtitle {
+        font-size: 60px;
+        line-height: 100px;
+    }
 }
 
 
@@ -65,6 +81,21 @@
         font-size: 50px;
         line-height: 70px;
     }
+
+    .step__two-img {
+        width: 600px;
+    }
+
+    .step__two-img img {
+        transform: translateX(90px);
+    }
+
+    .step__two-box:nth-last-child(1) .step__two-txt,
+    .step__two-box:nth-last-child(1) .step__two-text,
+    .step__two-text,
+    .step__two-txt {
+        line-height: 77px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -95,8 +126,16 @@
         color: var(--text-color);
     }
 
-    .scroll-header .active-link {
+    .scroll-header .nav__link:hover {
+        color: var(--first-color);
+    }
+
+    .scroll-header .button:hover {
         color: var(--title-color);
+    }
+
+    .scroll-header .active-link {
+        color: var(--first-color);
     }
 
     .scroll-header .active-link::after {
@@ -151,6 +190,23 @@
     .spot__left-text span {
         text-align: center;
         justify-content: center;
+    }
+
+    .step__two-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .step__two-img img {
+        transform: translateX(0);
+    }
+
+    .step__two-img {
+        width: 100%;
+    }
+    .step__two-subtitle {
+        font-size: 45px;
+        line-height: 70px;
     }
 }
 
@@ -212,6 +268,17 @@
     .spot__left-description {
         width: 100%;
         font-size: 17px;
+    }
+    .step__two-box:nth-last-child(1) .step__two-link {
+        margin-bottom: 70px;
+    }
+
+    .step__two-box:nth-last-child(1) .step__two-txt,
+    .step__two-box:nth-last-child(1) .step__two-text,
+    .step__two-text,
+    .step__two-txt {
+        line-height: 65px;
+        font-size: 40px;
     }
 }
 
@@ -312,6 +379,28 @@
     .spot__right {
         display: none;
     }
+
+    .step__two-subtitle {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .step__two-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .step__two-description {
+        font-size: 23px;
+        line-height: 35px;
+    }
+    .step__two-link {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .step__two-button .button {
+        font-size: 18px;
+        line-height: 0;
+    }
 }
 
 @media (max-width: 430px) {
@@ -340,6 +429,12 @@
     .spot__left-buttons .demo__btn {
         width: 100%;
         text-align: center;
+    }
+
+    .step__two-button .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 

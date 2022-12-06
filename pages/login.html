@@ -21,6 +21,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="../assets/css/sign.css">
     <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
 
     <title>Log in</title>
 </head>
@@ -85,23 +86,23 @@
 
     <!-- Main -->
     <main>
-        <!-- Section Register -->
+        <!-- Login Register -->
         <section class="sign_up" id="signup">
             <div class="container">
-                <div class="signup">
-                    <div class="signup__data">
+                <div class="signup w-100">
+                    <div class="signup__data d-flex align-items-center justify-content-center flex-column">
                         <h1 class="signup__subtitle">Log in</h1>
                         <p class="signup__description">
                             Login into existing account.
                         </p>
                     </div>
-                    <form class="signup__form" action="">
-                        <div class="signup__wrap">
-                            <input class="signup__input" type="name" required placeholder="Username">
+                    <form class="signup__form d-grid" action="">
+                        <div class="signup__wrap d-flex align-items-center">
+                            <input class="signup__input w-100" type="name" required placeholder="Username">
                             <a href="#!"><img src="../assets/img/user.svg" alt=""></a>
                         </div>
                         <div class="signup__wrap">
-                            <input class="signup__input" type="password" required placeholder="Password">
+                            <input class="signup__input w-100" type="password" required placeholder="Password">
                             <a href="#!"><img src="../assets/img/eye.svg" alt=""></a>
                         </div>
                         <button class="button login__btn">Log In</button>
@@ -113,12 +114,12 @@
         <!-- Section Accounts -->
         <section class="accounts" id="accounts">
             <div class="container">
-                <div class="accounts__wrap">
-                    <div class="accounts__data">
+                <div class="accounts__wrap d-flex align-items-center justify-content-center flex-column">
+                    <div class="accounts__data d-flex align-items-center justify-content-center flex-column">
                         <h1 class="accounts__subtitle">Or</h1>
                         <h2 class="accounts__title">Log in with...</h2>
                     </div>
-                    <div class="accounts__buttons">
+                    <div class="accounts__buttons d-grid">
                         <a href="#!" class="accounts__btn"><img src="../assets/img/facebook.png" alt="">Log in with
                             Facebook</a>
                         <a href="#!" class="accounts__btn"><img src="../assets/img/apple.png" alt="">Log in with
