@@ -204,6 +204,7 @@
     .step__two-img {
         width: 100%;
     }
+
     .step__two-subtitle {
         font-size: 45px;
         line-height: 70px;
@@ -269,6 +270,7 @@
         width: 100%;
         font-size: 17px;
     }
+
     .step__two-box:nth-last-child(1) .step__two-link {
         margin-bottom: 70px;
     }
@@ -389,17 +391,30 @@
         font-size: 20px;
         line-height: 30px;
     }
+
     .step__two-description {
         font-size: 23px;
         line-height: 35px;
     }
+
     .step__two-link {
         font-size: 25px;
         line-height: 35px;
     }
+
     .step__two-button .button {
         font-size: 18px;
         line-height: 0;
+    }
+
+    .step__two-data {
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+
+    .step__two-subtitle {
+        font-size: 28px;
+        line-height: 35px;
     }
 }
 
