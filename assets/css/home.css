@@ -498,6 +498,10 @@ img {
   color: var(--text-color);
 }
 
+.spot__left-buttons .demo__btn:hover {
+  color: var(--title-color);
+}
+
 .spot__right {
   display: flex;
   align-items: center;

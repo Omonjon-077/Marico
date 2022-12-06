@@ -208,6 +208,11 @@
     .step__description {
         font-size: 25px;
     }
+
+    .spot__left-description{
+        width: 100%;
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -275,6 +280,35 @@
     .step__container .demo__btn {
         padding: 15px 30px;
     }
+
+    .spot__left-description{
+        font-size: 16px;
+    }
+
+    .spot__left-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .spot__left-subtitle,
+    .spot__left-text,
+    .spot__left-text span{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .spot__left-title{
+        font-size: 25px;
+    }
+
+    .spot__left-buttons .button,
+    .spot__left-buttons .demo__btn{
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -292,6 +326,17 @@
     .creators__container {
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+
+    .step__container .demo__btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .spot__left-buttons .button,
+    .spot__left-buttons .demo__btn{
+        width: 100%;
+        text-align: center;
     }
 }
 
