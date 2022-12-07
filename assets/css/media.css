@@ -96,6 +96,10 @@
     .step__two-txt {
         line-height: 77px;
     }
+
+    .agree__img{
+        height: 250px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -213,6 +217,50 @@
         font-size: 45px;
         line-height: 70px;
     }
+
+    .agree__title {
+        font-size: 65px;
+        line-height: 100px;
+    }
+
+    .agree__description {
+        font-size: 60px;
+        line-height: 90px;
+    }
+
+    .footer__top-logo {
+        width: 144px;
+        height: 131px;
+    }
+
+    .footer__top-title {
+        font-size: 85px;
+        line-height: 120px;
+    }
+
+    .footer__top-description {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .footer__top .button {
+        font-size: 27px;
+        line-height: 39px;
+        padding: 29px 112px;
+    }
+
+    .footer__bottom-copy {
+        line-height: 35px;
+    }
+    .footer__bottom-list{
+        padding-left: 10px;
+        column-gap: 20px;
+    }
+
+    .footer__bottom-link {
+        font-size: 22px;
+        line-height: 35px;
+    }
 }
 
 @media (max-width:767px) {
@@ -290,6 +338,63 @@
     .step__two-txt {
         line-height: 65px;
         font-size: 40px;
+    }
+
+    
+    .agree__title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .agree__description {
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .footer__top-logo {
+        width: 114px;
+        height: 101px;
+    }
+
+    .footer__top-title {
+        margin-top: 10px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .footer__top-description {
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .footer__top .button {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 25px 77px;
+    }
+
+    .footer__bottom{
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .footer__bottom-wrap{
+        align-items: center;
+    }
+
+    .footer__bottom-copy {
+        line-height: 30px;
+    }
+    .footer__bottom-list{
+        order: -1;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer__bottom-link {
+        font-size: 20px;
+        line-height: 35px;
     }
 }
 
@@ -391,6 +496,11 @@
         display: none;
     }
 
+    .step__two-box {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
     .step__two-subtitle {
         font-size: 35px;
         line-height: 50px;
@@ -425,6 +535,47 @@
         font-size: 28px;
         line-height: 35px;
     }
+
+    .agree__img{
+        height: 150px;
+    }
+
+    .agree__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .agree__description {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .footer__top-logo {
+        width: 104px;
+        height: 94px;
+    }
+
+    .footer__top-title {
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .footer__top-description {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .footer__top .button {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 25px 77px;
+    }
+
+    .footer__bottom-link {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -455,10 +606,33 @@
         text-align: center;
     }
 
+    .step__two-box {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
     .step__two-button .button {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .agree__container {
+        margin-bottom: 50px;
+    }
+
+    .footer__top .button {
+        display: flex;
+        padding: 15px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__bottom-copy {
+        font-size: 14px;
+        line-height: 25px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -482,5 +656,16 @@
 
     .step__title {
         font-size: 22px;
+    }
+
+    .footer__top .button {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 25px 77px;
+    }
+
+    .footer__bottom-copy,
+    .footer__bottom-copy a {
+        font-size: 12px;
     }
 }

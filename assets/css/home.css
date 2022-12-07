@@ -570,11 +570,109 @@ img {
   color: var(--title-color);
 }
 
-
-
 /*=============== CALCULATE ===============*/
+.agree__container {
+  margin-top: 99px;
+  margin-bottom: 200px;
+}
+
+.agree__title {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 112px;
+  color: var(--title-color);
+  margin-bottom: 52px;
+}
+
+.agree__backround {
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  background: url(../img/backround.png) no-repeat center/cover;
+}
+
+.agree__description {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 105px;
+  color: var(--title-color);
+  max-width: 1236px;
+}
+
 
 /*=============== FOOTER ===============*/
+.footer__container {
+  row-gap: 180px;
+  margin-bottom: 70px;
+}
+
+.footer__top-logo {
+  width: 164px;
+  height: 151px;
+}
+
+.footer__top-title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: var(--title-color);
+}
+
+.footer__top-description {
+  font-size: 43px;
+  line-height: 64px;
+  color: var(--title-color);
+}
+
+.footer__top .button {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  padding: 29px 112px;
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+
+.footer__bottom-wrap {
+  row-gap: 2px;
+}
+
+.footer__bottom-copy {
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--text-color);
+  width: max-content;
+}
+
+.footer__bottom-copy a {
+  font-size: 17px;
+  margin-left: 5px;
+  color: var(--first-color);
+}
+
+.footer__bottom-logo {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 63px;
+  color: var(--title-color);
+  column-gap: 26px;
+}
+
+.footer__bottom-logo:hover {
+  color: var(--title-color);
+}
+
+.footer__bottom-list {
+  column-gap: 46px;
+}
+
+.footer__bottom-link {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--text-color);
+}
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {

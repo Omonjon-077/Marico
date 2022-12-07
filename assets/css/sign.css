@@ -167,7 +167,7 @@
         color: var(--title-color);
     }
 
-    .signup__form .button{
+    .signup__form .button {
         font-size: 20px;
     }
 
@@ -193,7 +193,7 @@
 @media (max-width: 600px) {
     .signup__form {
         grid-template-columns: repeat(1, 1fr);
-        display: flex;
+        display: flex !important;
         align-items: center;
         flex-direction: column;
     }
