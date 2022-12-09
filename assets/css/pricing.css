@@ -1,0 +1,247 @@
+/* Plan section */
+.plan__container {
+    margin-top: 160px;
+    margin-bottom: 180px;
+}
+
+.plan__wrap {
+    margin-top: 120px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.plan__data-subtitle {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 112px;
+    color: var(--title-color);
+}
+
+.plan__box {
+    padding: 36px 34px;
+    border: 1px solid var(--text-color);
+    background: #131313;
+    border-radius: 30px;
+}
+
+.plan__box-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: var(--title-color);
+}
+
+.plan__box-text {
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--text-color);
+}
+
+.plan__box-subtitle {
+    font-weight: 700;
+    font-size: 69px;
+    line-height: 104px;
+    color: var(--title-color);
+    margin-bottom: 100px;
+    margin-top: 15px;
+}
+
+.plan__box:nth-last-child(2) .plan__box-subtitle,
+.plan__box:nth-last-child(1) .plan__box-subtitle {
+    margin-bottom: 0;
+}
+
+.plan__box-subtitle span {
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--text-color);
+}
+
+.plan__box-text2 {
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--text-color);
+    margin-bottom: 100px;
+}
+
+.plan__box-txt {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    color: var(--title-color);
+    margin-bottom: 9px;
+}
+
+.plan__box-area {
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--title-color);
+    margin-bottom: 45px;
+}
+
+.plan__box-left {
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--text-color);
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.plan__box:nth-last-child(2) .plan__box-left,
+.plan__box:nth-last-child(1) .plan__box-left {
+    padding-left: 0;
+}
+
+.plan__box-key {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--title-color);
+    margin-bottom: 28px;
+}
+
+.plan__box-check {
+    column-gap: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--title-color);
+}
+
+.plan__box-button {
+    text-align: center;
+    padding: 30px 10px;
+    border: 3.5px solid var(--first-color);
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: var(--title-color);
+    border-radius: 20px;
+    margin-top: auto;
+}
+
+.plan__box:nth-last-child(1) .plan__box-button {
+    margin-top: 30px;
+}
+
+.plan__box:nth-last-child(1) {
+    background-color: var(--first-color);
+}
+
+.plan__box:nth-last-child(1) .plan__box-text,
+.plan__box:nth-last-child(1) .plan__box-subtitle span,
+.plan__box:nth-last-child(1) .plan__box-text2,
+.plan__box:nth-last-child(1) .plan__box-left {
+    color: var(--title-color);
+}
+
+.plan__box:nth-last-child(1) {
+    border: 1px solid var(--first-color);
+}
+
+.plan__box:nth-last-child(1) .plan__box-button {
+    background-color: var(--title-color);
+    color: var(--first-color);
+    /* border: none */
+}
+
+.plan__box-button:hover {
+    color: var(--title-color);
+}
+
+
+
+@media (max-width: 1399px) {
+    .plan__box-button {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .plan__box {
+        padding: 25px 20px;
+    }
+
+    .plan__box-title,
+    .plan__box-subtitle {
+        font-size: 37px;
+    }
+
+    .plan__box-text,
+    .plan__box-text2,
+    .plan__box-subtitle span {
+        font-size: 24px;
+    }
+
+    .plan__box-left,
+    .plan__box-check {
+        font-size: 20px;
+    }
+
+    .plan__box-left {
+        padding-left: 0;
+    }
+
+    .plan__box-txt {
+        font-size: 22px;
+    }
+
+    .plan__box-area {
+        font-size: 23px;
+    }
+
+    .plan__box-button {
+        font-size: 18px;
+    }
+
+    .plan__data-subtitle {
+        font-size: 50px;
+        line-height: 85px;
+    }
+}
+
+@media (max-width:991px) {
+    .plan__wrap {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .plan__box {
+        padding: 25px 20px;
+    }
+
+    .plan__box:nth-last-child(2) .plan__box-button {
+        margin-top: 20px;
+    }
+
+    .plan__data-subtitle {
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .plan__wrap {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .plan__box {
+        padding: 25px 20px;
+    }
+
+    .plan__box-button {
+        margin-top: 30px !important;
+        font-size: 16px;
+    }
+
+    .plan__data-subtitle {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .plan__box{
+        padding: 25px 15px;
+    }
+}
