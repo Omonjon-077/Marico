@@ -691,5 +691,31 @@ img {
 }
 
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 3rem;
+  bottom: -50%;
+  background-color: var(--title-color);
+  box-shadow: 0 4px 12px hsla(19, 64%, 24%, .1);
+  display: inline-flex;
+  padding: .35rem;
+  border-radius: .25rem;
+  font-size: 1.25rem;
+  color: var(--body-color);
+  z-index: var(--z-tooltip);
+  transition: bottom .3s, transform .3s, background .4s;
+}
+
+.scrollup:hover {
+  color: var(--first-color);
+  transform: translateY(-.25rem);
+}
+
+.scrollup i{
+  font-size: 1.5rem;
+}
 
 /* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
