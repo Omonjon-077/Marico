@@ -19,11 +19,11 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/pricing.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/media.css">
 
-    <title>Pricing</title>
+    <title>About us</title>
 </head>
 
 <body>
@@ -56,10 +56,10 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="about.html" class="nav__link">About</a>
+                        <a href="#!" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Pricing</a>
+                        <a href="pricing.html" class="nav__link">Pricing</a>
                     </li>
                     <li class="nav__item">
                         <a href="#blog" class="nav__link">Blog</a>
@@ -84,67 +84,79 @@
     </header>
 
 
-    <!--==================== Main ====================-->
+    <!--==================== MAIN ====================-->
     <main>
-        <!--==================== PLAN ====================-->
-        <section class="plan" id="plan">
+        <section class="about" id="about">
             <div class="container">
-                <div class="plan__container">
-                    <div class="plan__data d-flex justify-content-center">
-                        <h3 class="plan__data-subtitle w-100 text-center">Choose the plan that's right for you.</h3>
+                <div class="about__container">
+                    <div class="about__data d-flex flex-column align-items-center">
+                        <h2 class="about__logo d-flex align-items-center">
+                            <img src="../assets/img/about__png.png" alt=""> Marico
+                        </h2>
+                        <a href="#!" data-bs-target="#error" data-bs-toggle="modal" class="about__link">OUR MISSION</a>
+                        <h3 class="about__subtitle w-100 text-center">We exist to help creators own their audience.</h3>
+                        <p class="about__description w-100 text-center">We believe that social platforms are taking advantage of creators.
+                            We want to change that and help creators fight back. </p>
                     </div>
-                    <div class="plan__wrap d-grid">
-                        <div class="plan__box d-flex flex-column">
-                            <h3 class="plan__box-title">Starer</h3>
-                            <p class="plan__box-text">Perfect for tying out Wavium</p>
-                            <h2 class="plan__box-subtitle">Free</h2>
-                            <p class="plan__box-txt">Collect Unlimited subscribers</p>
-                            <p class="plan__box-area">500 monthly emails</p>
-                            <p class="plan__box-left">Upgrade to send more emails</p>
-                            <p class="plan__box-key">Key features</p>
-                            <p class="plan__box-check d-flex align-items-center"><img src="../assets/img/check.png"
-                                    alt=""> Automatic updating home page</p>
-                            <p class="plan__box-check d-flex align-items-center pt-4"><img src="../assets/img/check.png"
-                                    alt=""> Unlimited sources + posts</p>
-                            <a href="#!" class="plan__box-button">Start For Free</a>
-                        </div>
+                    <div class="about__wrap d-flex flex-column">
+                        <p class="about__wrap-description">
+                            Building a career on social platforms is like building a home on someone else's
+                            land. While social platforms are great for discovering and reaching your audience,
+                            your goal as a creator should be to convert your followers into email or text
+                            message subscribers. Why? Look no further than TikTok. Almost overnight,
+                            millions of creative people almost lost their careers. 
+                        </p>
+                        <p class="about__wrap-description">
+                            If a platform removes your account, or their algorithm for distribution no longer
+                            favours you, are you prepared?  
+                        </p>
+                        <p class="about__wrap-description">
+                            If you want to build a career as a creator, your focus should be on building durable
+                            distribution channels. Without distribution, you have no business. So how can you
+                            build an audience that you actually own? With emails and phone numbers. These
+                            distribution channels are direct. Instead of going through some algorithm, when
+                            you share over email and text message, you know that your audience will see your
+                            content. Even better is the fact that you own these lists. Instagram removes your
+                            acount, you're ok. YouTube changes their algorithm, you're ok. You own your
+                            audience. 
+                        </p>
+                        <p class="about__wrap-description">
+                            We built Marico to make this process easy, fast, and effective. The traditional
+                            solution to this problem involves spending days building a website or hiring
+                            someone expensive to do it for you. But those days are gone. With Marico, you
+                            get a portfolio that is always up-to-date and converts visitors into email or text
+                            message subscribers. The best thing? It takes under 5 minutes to setup, and it
+                            automatically updates whenever you post new content anywhere online. We
+                            believe the best tools are the ones you don't even notice. Marico helps you build
+                            your own audience, without any hassle or time commitment. All you have to do is
+                            share your portfolio link with your audience, and we'll handle the rest.  
+                        </p>
+                        <p class="about__wrap-description">
+                            You can also create posts from within Marico and share them in just a few clicks
+                            to your portfolio, and to your email and text message subscribers. Since all of your
+                            content is already in Marico, creating content takes minutes, not hours. 
+                        </p>
+                        <p class="about__wrap-description">
+                            For too long, social platforms have taken advantage of creators. Fight back and
+                            build an audience that you own. 
+                        </p>
 
-                        <div class="plan__box d-flex flex-column">
-                            <h3 class="plan__box-title">Basic</h3>
-                            <p class="plan__box-text">Build your online home</p>
-                            <h2 class="plan__box-subtitle">$14<span>Per month</span></h2>
-                            <p class="plan__box-text2">or $19/mo, billed monthly</p>
-                            <p class="plan__box-txt">Collect Unlimited subscribers</p>
-                            <p class="plan__box-area">2,000 free monthl emails</p>
-                            <p class="plan__box-left">Purchase more for $0.002 per email</p>
-                            <p class="plan__box-key">Everything in starter, plus</p>
-                            <p class="plan__box-check d-flex align-items-center"><img src="../assets/img/check.png"
-                                    alt=""> Remove Wavium branding</p>
-                            <p class="plan__box-check d-flex align-items-center pt-4"><img src="../assets/img/check.png"
-                                    alt=""> Embed Wavium on your own domain</p>
-                            <a href="#!" class="plan__box-button">Start Free 14-day Trial</a>
-                        </div>
-
-                        <div class="plan__box d-flex flex-column">
-                            <h3 class="plan__box-title">Basic</h3>
-                            <p class="plan__box-text">Build your online home</p>
-                            <h2 class="plan__box-subtitle">$29<span>Per month</span></h2>
-                            <p class="plan__box-text2">or $34/mo, billed monthly</p>
-                            <p class="plan__box-txt">Collect Unlimited subscribers</p>
-                            <p class="plan__box-area">10,000 free monthl emails</p>
-                            <p class="plan__box-left">Purchase more for $0.002 per email</p>
-                            <p class="plan__box-key">Everything in starter, plus</p>
-                            <p class="plan__box-check d-flex align-items-center"><img src="../assets/img/check.png"
-                                    alt=""> Collect text massage subscribers</p>
-                            <p class="plan__box-check d-flex align-items-center pt-4"><img src="../assets/img/check.png"
-                                    alt=""> Share posts over text massage</p>
-                            <a href="#!" class="plan__box-button">Start Free 14-day Trial</a>
-                        </div>
+                        <h3 class="about__wrap-title">- The Team Marico (Olivia, William, and Noah)</h3>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,10 +202,25 @@
 
 
 
-
-
-
-
+    <!--=============== ERROR MODAL ===============-->
+    <div class="modal fade" id="error" tabindex="-1" aria-labelledby="errorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorLabel">Error 404</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        Sorry 😔. This page not available 😴. Please try again later ⚡.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

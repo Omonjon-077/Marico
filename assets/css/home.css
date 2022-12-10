@@ -81,6 +81,10 @@ a {
   transition: .4s;
 }
 
+a:hover{
+  /* color: ; */
+}
+
 ul {
   margin-bottom: 0;
 }
