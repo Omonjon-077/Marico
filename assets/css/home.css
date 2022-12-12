@@ -82,7 +82,7 @@ a {
 }
 
 a:hover{
-  /* color: ; */
+  color: var(--title-color);
 }
 
 ul {
