@@ -677,6 +677,10 @@ img {
   color: var(--text-color);
 }
 
+.footer__bottom-link:hover {
+  color: var(--first-color);
+}
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
