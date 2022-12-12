@@ -47,9 +47,12 @@
 
                                 <ul style="background-color: #326CF9;" class="dropdown-menu"
                                     aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#" data-bs-target="#error" data-bs-toggle="modal">Action</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-target="#error" data-bs-toggle="modal">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-target="#error" data-bs-toggle="modal">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Something else here</a></li>
                                 </ul>
                             </div>
 
@@ -189,15 +192,27 @@
 
 
 
+    <!--=============== ERROR MODAL ===============-->
+    <div class="modal fade" id="error" tabindex="-1" aria-labelledby="errorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorLabel">Error 404</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        Sorry 😔. This page not available 😴. Please try again later ⚡.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
+    
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="bx bx-chevrons-up"></i>
