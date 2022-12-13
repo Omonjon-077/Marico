@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== DESCRIPTION ===============-->
+    <meta name="description" content="by Omonjon Sobirov">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOX ICONS ===============-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!--=============== BOOTSTRAP 5 CSS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <img src="../assets/img/favicon.png" alt="Logo" class="nav__logo-img">
+                Marico
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#use_cases" class="nav__link active-link">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="drop__span">Use Cases</span>
+                                </a>
+
+                                <ul style="background-color: #326CF9;" class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-target="#error"
+                                            data-bs-toggle="modal">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pricing.html" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">Blog</a>
+                    </li>
+
+                    <div class="sign_login">
+                        <a href="login.html" class="nav__link">Login</a>
+                        <a href="sign.html" class="nav__link button">Sign Up</a>
+                    </div>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <!--==================== CONTENT ====================-->
+        <section class="content" id="content">
+            <div class="container">
+                <div class="content__container">
+                    <div class="content__data d-flex flex-column align-items-center">
+                        <h3 class="content__data-subtitle">Content Sources</h3>
+                        <h3 class="content__data-title">Connect these sources to your Marico homepage.</h3>
+                    </div>
+
+                    <div class="content__wrap d-grid">
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/twitter_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Twitter</h2>
+                            <p class="content__box-description">
+                                Connect your Twitter feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/youtube_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">YouTube</h2>
+                            <p class="content__box-description">
+                                Connect your YouTube feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/wordpress_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">WordPress</h2>
+                            <p class="content__box-description">
+                                Connect your WordPress feed
+                                to your Marico homepage.
+                            </p>
+                        </div>
+
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/substack_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Substack</h2>
+                            <p class="content__box-description">
+                                Connect your Substack feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/medium_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Medium</h2>
+                            <p class="content__box-description">
+                                Connect your Medium feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/wordpress_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">RSS Feeds</h2>
+                            <p class="content__box-description">
+                                Connect your RSS feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/spotify_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Spotify</h2>
+                            <p class="content__box-description">
+                                Connect your Spotify feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/anchor_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Anchor</h2>
+                            <p class="content__box-description">
+                                Connect your Anchor feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/podcast_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Apple Podcasts</h2>
+                            <p class="content__box-description">
+                                Connect your Apple Podcast
+                                to your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/instagram_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Instagram</h2>
+                            <p class="content__box-description">
+                                Connect your Instagram feed
+                                to your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/linkedin_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Linkedin</h2>
+                            <p class="content__box-description">
+                                Connect your Linkedin feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                        <div class="content__box hvr-float-shadow d-flex flex-column">
+                            <div class="content__box-img">
+                                <img class="h-100 w-100" src="../assets/img/facebook_logo.png" alt="">
+                            </div>
+                            <h2 class="content__box-title">Fackbook</h2>
+                            <p class="content__box-description">
+                                Connect your Fecebook feed to
+                                your Marico homepage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== AGREE ====================-->
+        <section class="agree" id="agree">
+            <div class="container">
+                <div class="agree__container d-flex flex-column align-items-center">
+                    <div class="agree__backround d-flex justify-content-center align-items-center">
+                        <p class="agree__description w-100 text-center">
+                            We've helped over 1,000 creatorsre
+                            claim control of their audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__container d-flex flex-column">
+                <div class="footer__top d-flex flex-column align-items-center">
+                    <a href="#!" class="footer__top-logo"><img class="w-100 h-100" src="../assets/img/footer__top.png"
+                            alt=""></a>
+                    <h2 class="footer__top-title">Get Started Now</h2>
+                    <p class="footer__top-description text-center">Setup is easy and takes under 5 minutes.</p>
+                    <a href="#!" data-bs-target="#error" data-bs-toggle="modal" class="button">Get Started Now</a>
+                    <p class="intro__description d-flex align-items-center">
+                        <img src="../assets/img/dot.png" alt=""> <span>1000+</span> creators have already started
+                    </p>
+                </div>
+                <div class="footer__bottom d-flex align-items-center justify-content-between">
+                    <div class="footer__bottom-wrap d-flex flex-column">
+                        <a href="index.html" class="footer__bottom-logo d-flex align-items-center"><img
+                                src="../assets/img/footer__logo.png" alt=""> Marico</a>
+                        <p href="#!" class="footer__bottom-copy d-flex align-items-center">© by <a
+                                href="https://omonjon-077.github.io/mini-Portfolio/">Omonjon Sobiriv</a>. All rigths
+                            reserved 2022</p>
+                    </div>
+                    <ul class="footer__bottom-list d-flex align-items-center">
+                        <li class="footer__bottom-item"><a href="about.html" class="footer__bottom-link">About</a></li>
+                        <li class="footer__bottom-item"><a href="pricing.html" class="footer__bottom-link">Pricing</a>
+                        </li>
+                        <li class="footer__bottom-item"><a href="#!" class="footer__bottom-link">Blog</a></li>
+                        <li class="footer__bottom-item"><a href="sign.html" class="footer__bottom-link">Sign
+                                in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--=============== ERROR MODAL ===============-->
+    <div class="modal fade" id="error" tabindex="-1" aria-labelledby="errorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorLabel">Error 404</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        Sorry 😔. This page not available 😴. Please try again later ⚡.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-chevrons-up"></i>
+    </a>
+
+
+
+
+    <!--=============== BOOTSTRAP 5 JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="../assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

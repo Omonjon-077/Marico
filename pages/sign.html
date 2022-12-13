@@ -47,9 +47,12 @@
 
                                 <ul style="background-color: #326CF9;" class="dropdown-menu"
                                     aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" data-bs-target="#error" data-bs-toggle="modal"
+                                            href="#">Action</a></li>
+                                    <li><a class="dropdown-item" data-bs-target="#error" data-bs-toggle="modal"
+                                            href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" data-bs-target="#error" data-bs-toggle="modal"
+                                            href="#">Something else here</a></li>
                                 </ul>
                             </div>
 
@@ -62,7 +65,7 @@
                         <a href="pricing.html" class="nav__link">Pricing</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#blog" class="nav__link">Blog</a>
+                        <a href="blog.html" class="nav__link">Blog</a>
                     </li>
 
                     <div class="sign_login">
@@ -124,11 +127,14 @@
                         <h2 class="accounts__title">Sign up with...</h2>
                     </div>
                     <div class="accounts__buttons d-grid">
-                        <a href="#!" class="accounts__btn"><img src="../assets/img/facebook.png" alt="">Sign up with
+                        <a href="#!" data-bs-target="#error" data-bs-toggle="modal" class="accounts__btn"><img
+                                src="../assets/img/facebook.png" alt="">Sign up with
                             Facebook</a>
-                        <a href="#!" class="accounts__btn"><img src="../assets/img/apple.png" alt="">Sign up with
+                        <a href="#!" data-bs-target="#error" data-bs-toggle="modal" class="accounts__btn"><img
+                                src="../assets/img/apple.png" alt="">Sign up with
                             Apple</a>
-                        <a href="#!" class="accounts__btn"><img src="../assets/img/google.png" alt="">Sign up with
+                        <a href="#!" data-bs-target="#error" data-bs-toggle="modal" class="accounts__btn"><img
+                                src="../assets/img/google.png" alt="">Sign up with
                             Google</a>
                     </div>
                     <h3 class="accounts__copy">Already have an account? Please <a href="login.html">Log in.</a></h3>
@@ -137,6 +143,27 @@
         </section>
     </main>
 
+
+
+    <!--=============== ERROR MODAL ===============-->
+    <div class="modal fade" id="error" tabindex="-1" aria-labelledby="errorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorLabel">Error 404</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        Sorry 😔. This page not available 😴. Please try again later ⚡.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
