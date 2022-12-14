@@ -104,6 +104,10 @@
     .scrollup {
         right: 3rem;
     }
+
+    .load__gif {
+        width: 900px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -266,6 +270,10 @@
         font-size: 22px;
         line-height: 35px;
     }
+
+    .load__gif {
+        width: 700px;
+    }
 }
 
 @media (max-width:767px) {
@@ -405,6 +413,10 @@
 
     .scrollup {
         right: 1rem;
+    }
+
+    .load__gif {
+        width: 500px;
     }
 }
 
@@ -589,6 +601,10 @@
 
     .scrollup {
         padding: 2.7px;
+    }
+
+    .load__gif {
+        width: 300px;
     }
 }
 

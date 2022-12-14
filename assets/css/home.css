@@ -727,3 +727,23 @@ img {
 .show-scroll {
   bottom: 3rem;
 }
+
+
+/* LOADER */
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 17, 31, 255);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+/* The size may vary depending 
+on the image of the gif */
+.load__gif {
+  width: 1000px;
+}

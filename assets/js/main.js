@@ -38,6 +38,15 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*=============== LOADER ===============*/
+onload = () => {
+    const load = document.getElementById('load')
+
+    setTimeout(() => {
+        load.style.display = 'none'
+    }, 2500)
+}
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 /* const sections = document.querySelectorAll('section[id]')
 
@@ -69,22 +78,22 @@ const scrollUp = () => {
 window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '60px',
-//     duration: 2500,
-//     delay: 400,
-//     reset: true
-//   })
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true, 
+  })
   
-//   sr.reveal('.home__title, .popular__container, .features__img, .featured__filters')
-//   sr.reveal('.home__subtitle', {delay: 500})
-//   sr.reveal('.home__elec', {delay: 600})
-//   sr.reveal('.home__img', {delay: 800})
-//   sr.reveal('.home__car-data', {delay: 900, interval: 100, origin: 'bottom'})
-//   sr.reveal('.home__button', {delay: 1000, origin: 'bottom'})
-//   sr.reveal('.about__group, .offer__data', {origin: 'left'})
-//   sr.reveal('.about__data, .offer__img', {origin: 'right'})
-//   sr.reveal('.features__map', {delay: 600, origin: 'bottom'})
-//   sr.reveal('.features__card', {interval: 300})
-//   sr.reveal('.featured__card, .logos__content, .footer__content', {interval: 100})
+  sr.reveal('.intro__subtitle, .intro__title, .creators__subtitle, .step__subtitle')
+  sr.reveal('.intro__description, .step__title, .step__two-title', {delay: 500})
+  sr.reveal('.intro__wrap-subtitle, .step__description, .step__two-subtitle', {delay: 600})
+  sr.reveal('.intro__wrap-buttons, .agree__title', {delay: 800})
+  sr.reveal('.creators__wrap-box', {delay: 9000, interval: 100, origin: 'bottom'})
+  sr.reveal('.reveal__btn', {delay: 1000, origin: 'bottom'})
+  sr.reveal('.spot__left', {origin: 'left'})
+  sr.reveal('.spot__right', {origin: 'right'})
+  sr.reveal('.step__two-description, .step__two-button', {delay: 600, origin: 'bottom'})
+  sr.reveal('.step__two-box', {interval: 300})
+  sr.reveal('.featured__card, .logos__content, .footer__content', {interval: 100})
