@@ -39,18 +39,13 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== LOADER ===============*/
-$(function () {
-    if ($('.load').length) {
-        document.addEventListener('DOMContentLoaded', function (eventObject) {
-            $('.load').fadeIn();
-        })
-        window.addEventListener("load", function(eventObject) {
-            $('.load').fadeOut("slow");
-    
-        });
-    }
-    
+document.addEventListener('DOMContentLoaded', function (eventObject) {
+    $('.load').fadeIn();
 })
+window.addEventListener("load", function (eventObject) {
+    $('.load').fadeOut("slow");
+
+});
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -76,7 +71,7 @@ $(function () {
         sr.reveal('.intro__description, .step__title, .step__two-title, .footer__top-title', { delay: 500 })
         sr.reveal('.intro__wrap-subtitle, .step__description, .step__two-subtitle, .footer__top-description', { delay: 600 })
         sr.reveal('.intro__wrap-buttons, .agree__title, .agree__description, .footer__reveal', { delay: 800 })
-        sr.reveal('.creators__wrap-box', {interval: 100, origin: 'bottom'})
+        sr.reveal('.creators__wrap-box', { interval: 100, origin: 'bottom' })
         sr.reveal('.reveal__btn, .agree__img', { delay: 1000, origin: 'bottom' })
         sr.reveal('.spot__left', { origin: 'left' })
         sr.reveal('.spot__right', { origin: 'right' })
