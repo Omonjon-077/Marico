@@ -39,34 +39,18 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== LOADER ===============*/
-onload = () => {
-    const load = document.getElementById('load')
-
-    setTimeout(() => {
-        load.style.display = 'none'
-    }, 2500)
-}
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-/* const sections = document.querySelectorAll('section[id]')
-
-const scrollActive = () => {
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 58,
-            sectionId = current.getAttribute('id'),
-            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            sectionsClass.classList.add('active-link')
-        } else {
-            sectionsClass.classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive) */
+$(function () {
+    if ($('.load').length) {
+        document.addEventListener('DOMContentLoaded', function (eventObject) {
+            $('.load').fadeIn();
+        })
+        window.addEventListener("load", function(eventObject) {
+            $('.load').fadeOut("slow");
+    
+        });
+    }
+    
+})
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -78,22 +62,27 @@ const scrollUp = () => {
 window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true, 
-  })
-  
-  sr.reveal('.intro__subtitle, .intro__title, .creators__subtitle, .step__subtitle')
-  sr.reveal('.intro__description, .step__title, .step__two-title', {delay: 500})
-  sr.reveal('.intro__wrap-subtitle, .step__description, .step__two-subtitle', {delay: 600})
-  sr.reveal('.intro__wrap-buttons, .agree__title', {delay: 800})
-  sr.reveal('.creators__wrap-box', {delay: 9000, interval: 100, origin: 'bottom'})
-  sr.reveal('.reveal__btn', {delay: 1000, origin: 'bottom'})
-  sr.reveal('.spot__left', {origin: 'left'})
-  sr.reveal('.spot__right', {origin: 'right'})
-  sr.reveal('.step__two-description, .step__two-button', {delay: 600, origin: 'bottom'})
-  sr.reveal('.step__two-box', {interval: 300})
-  sr.reveal('.featured__card, .logos__content, .footer__content', {interval: 100})
+$(function () {
+    if ($('.creators').length) {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            // reset: true, 
+        })
+
+        sr.reveal('.intro__subtitle, .intro__title, .creators__subtitle, .step__subtitle, .footer__top-logo')
+        sr.reveal('.intro__description, .step__title, .step__two-title, .footer__top-title', { delay: 500 })
+        sr.reveal('.intro__wrap-subtitle, .step__description, .step__two-subtitle, .footer__top-description', { delay: 600 })
+        sr.reveal('.intro__wrap-buttons, .agree__title, .agree__description, .footer__reveal', { delay: 800 })
+        sr.reveal('.creators__wrap-box', {interval: 100, origin: 'bottom'})
+        sr.reveal('.reveal__btn, .agree__img', { delay: 1000, origin: 'bottom' })
+        sr.reveal('.spot__left', { origin: 'left' })
+        sr.reveal('.spot__right', { origin: 'right' })
+        sr.reveal('.step__two-description, .step__two-button', { delay: 600, origin: 'bottom' })
+        sr.reveal('.step__two-box, .footer__bottom-item', { interval: 300, origin: 'top' })
+        sr.reveal('.footer__bottom-logo', { origin: 'top' })
+        sr.reveal('.footer__bottom-copy', { origin: 'bottom' })
+    }
+})
