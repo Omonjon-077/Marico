@@ -44,21 +44,25 @@ $(function () {
         document.addEventListener('DOMContentLoaded', function (eventObject) {
             $('.load').fadeIn();
         })
-        window.addEventListener("load", function(eventObject) {
+        window.addEventListener("load", function (eventObject) {
             $('.load').fadeOut("slow");
-    
+
         });
     }
 })
 
 /*=============== SHOW SCROLL UP ===============*/
-const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-        : scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+$(function () {
+    const scrollUp = () => {
+        if ($('#scroll-up').length) {
+            const scrollUp = document.getElementById('scroll-up')
+            // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                : scrollUp.classList.remove('show-scroll')
+        }
+    }
+    window.addEventListener('scroll', scrollUp)
+})
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 // $(function () {
@@ -68,7 +72,7 @@ window.addEventListener('scroll', scrollUp)
 //             distance: '60px',
 //             duration: 2500,
 //             delay: 400,
-//             // reset: true, 
+//             // reset: true,
 //         })
 
 //         sr.reveal('.intro__subtitle, .intro__title, .creators__subtitle, .step__subtitle, .footer__top-logo')
