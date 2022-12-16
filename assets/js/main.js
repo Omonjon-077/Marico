@@ -48,40 +48,81 @@ window.addEventListener("load", function (eventObject) {
 });
 
 /*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+/*=============== SCROLL REVEAL ANIMATION  for BLOG page ===============*/
 $(function () {
-    const scrollUp = () => {
-        if ($('.scroll-up').length) {
-            const scrollUp = document.getElementById('scroll-up')
-            // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-                : scrollUp.classList.remove('show-scroll')
-        }
+    if ($('.content').length) {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            // reset: true,
+        })
+        
+        sr.reveal('.content__data-subtitle')
+        sr.reveal('.content__data-title', { delay: 500 })
+        sr.reveal('.agree__description', { delay: 600 })
+        sr.reveal('.footer__top-title, .footer__top-description', { delay: 800 })
+        sr.reveal('.content__box, .footer__bottom-item', {interval: 100, origin: 'bottom'})
+        sr.reveal('.reveal__btn', { delay: 1000, origin: 'bottom' })
+        sr.reveal('.intro__description', { origin: 'left' })
+        sr.reveal('.footer__top-logo', { origin: 'right' })
+        sr.reveal('.footer__bottom-logo', { origin: 'top' })
+        sr.reveal('.footer__bottom-copy', { origin: 'bottom' })
     }
-    window.addEventListener('scroll', scrollUp)
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-// $(function () {
-//     if ($('.creators').length) {
-//         const sr = ScrollReveal({
-//             origin: 'top',
-//             distance: '60px',
-//             duration: 2500,
-//             delay: 400,
-//             // reset: true,
-//         })
 
-//         sr.reveal('.intro__subtitle, .intro__title, .creators__subtitle, .step__subtitle, .footer__top-logo')
-//         sr.reveal('.intro__description, .step__title, .step__two-title, .footer__top-title', { delay: 500 })
-//         sr.reveal('.intro__wrap-subtitle, .step__description, .step__two-subtitle, .footer__top-description', { delay: 600 })
-//         sr.reveal('.intro__wrap-buttons, .agree__title, .agree__description, .footer__reveal', { delay: 800 })
-//         sr.reveal('.creators__wrap-box', {interval: 100, origin: 'bottom'})
-//         sr.reveal('.reveal__btn, .agree__img', { delay: 1000, origin: 'bottom' })
-//         sr.reveal('.spot__left', { origin: 'left' })
-//         sr.reveal('.spot__right', { origin: 'right' })
-//         sr.reveal('.step__two-description, .step__two-button', { delay: 600, origin: 'bottom' })
-//         sr.reveal('.step__two-box, .footer__bottom-item', { interval: 300, origin: 'top' })
-//         sr.reveal('.footer__bottom-logo', { origin: 'top' })
-//         sr.reveal('.footer__bottom-copy', { origin: 'bottom' })
-//     }
-// })
+/*=============== SCROLL REVEAL ANIMATION  for ABOUT page ===============*/
+$(function () {
+    if ($('.about').length) {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            // reset: true,
+        })
+
+        sr.reveal('.about__logo, .team__data-subtitle')
+        sr.reveal('.about__title, .team__data-title', { delay: 500 })
+        sr.reveal('.about__subtitle', { delay: 600 })
+        sr.reveal('.about__description, .footer__top-title, .footer__top-description', { delay: 800 })
+        sr.reveal('.about__wrap-description', {interval: 100, origin: 'left'})
+        sr.reveal('.reveal__btn', { delay: 1000, origin: 'bottom' })
+        sr.reveal('.about__wrap-title', { origin: 'right' })
+        sr.reveal('.team__box, .footer__bottom-item', { interval: 300, origin: 'top' })
+        sr.reveal('.footer__bottom-logo', { origin: 'top' })
+        sr.reveal('.footer__bottom-copy', { origin: 'bottom' })
+    }
+})
+
+/*=============== SCROLL REVEAL ANIMATION  for PRICING page ===============*/
+$(function () {
+    if ($('.plan').length) {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            // reset: true,
+        })
+
+        sr.reveal('.plan__data-subtitle')
+        sr.reveal('.footer__top-title, .footer__top-description', { delay: 800 })
+        sr.reveal('.plan__box', {interval: 100, origin: 'bottom'})
+        sr.reveal('.reveal__btn', { delay: 1000, origin: 'bottom' })
+        sr.reveal('.intro__description', { delay: 1100, origin: 'left' })
+        sr.reveal('.footer__bottom-item', { interval: 300, origin: 'top' })
+        sr.reveal('.footer__bottom-logo', { origin: 'top' })
+        sr.reveal('.footer__bottom-copy', { origin: 'bottom' })
+    }
+})
